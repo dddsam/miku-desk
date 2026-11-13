@@ -15,6 +15,14 @@
 
 本项目需要你自行提供模型服务。MCP 和子代理使用各自的运行环境与权限；并非每个图形界面 Agent 都能直接作为子代理接入。
 
+## Windows 解压即用版
+
+前往 [v0.1.2 Releases](https://github.com/dddsam/miku-desk/releases/tag/v0.1.2)，下载 `MikuDesk-Windows-x64-v0.1.2.zip`，**完整解压后双击 `MikuDesk.exe`**。
+
+该程序包已包含 Electron 运行环境、动作视频和托盘图标，桌宠本体无需另装 Node.js。首次使用仍需配置自己的模型 API。MCP、Hooks 和子代理需要的外部运行环境按各自要求安装。
+
+Releases 中的 `SHA256SUMS.txt` 提供 ZIP 校验值；自动生成的 Source code 附件用于源码开发。
+
 ## 从源码运行
 
 1. 安装 Node.js 24。
@@ -55,6 +63,6 @@ npm run pack:win
 
 ## 开源范围
 
-代码和文档采用 [MIT 许可证](LICENSE)。这个仓库不包含角色视频、图标、用户密钥、聊天记录、个人配置、依赖目录或打包后的程序。素材需要自行提供，且不受本项目的 MIT 许可证授权；依赖遵循各自的许可证，见 [第三方说明](THIRD_PARTY_NOTICES.md)。
+代码和文档采用 [MIT 许可证](LICENSE)。源码仓库不包含角色视频、图标、用户密钥、聊天记录、个人配置、依赖目录或打包后的程序。从源码运行时需要自行提供素材；Releases 的解压即用版另外打包了动作视频和图标，素材不受本项目的 MIT 许可证授权；依赖遵循各自的许可证，见 [第三方说明](THIRD_PARTY_NOTICES.md)。
 
 本项目是独立桌宠程序，不代表角色权利方，也不隶属于模型供应商。

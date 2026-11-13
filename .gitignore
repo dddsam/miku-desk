@@ -1,0 +1,30 @@
+# Dependencies and generated builds
+node_modules/
+dist/
+out/
+coverage/
+.inspection/
+*.zip
+
+# Local credentials, user settings, and logs
+.env
+.env.*
+!.env.example
+*.enc
+*.enc.tmp
+*.log
+*.pem
+*.key
+miku-config*.json
+user-data/
+workspace/
+
+# Character media is supplied separately; the code license does not cover it.
+/assets/*.mp4
+/assets/icon.png
+
+# Editor / OS metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

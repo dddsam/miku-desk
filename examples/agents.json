@@ -1,0 +1,24 @@
+[
+  {
+    "id": "hermes",
+    "name": "Hermes",
+    "description": "本机 Hermes，使用自己已配置的模型和工具",
+    "enabled": false,
+    "type": "cli",
+    "command": "hermes",
+    "args": ["-z"],
+    "input": "stdin",
+    "timeoutMs": 300000
+  },
+  {
+    "id": "dsh",
+    "name": "DeepSeek Harness",
+    "description": "本机 DSH 的 headless profile",
+    "enabled": false,
+    "type": "cli",
+    "command": "dsh",
+    "args": ["--profile", "headless"],
+    "input": "stdin",
+    "timeoutMs": 300000
+  }
+]

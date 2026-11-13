@@ -1,0 +1,27 @@
+{
+  "name": "miku-desk",
+  "productName": "Miku Desk",
+  "version": "0.1.2",
+  "description": "圆形视频桌宠与可扩展的本地 Agent 工作台",
+  "type": "module",
+  "main": "src/main.mjs",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test/*.test.mjs",
+    "pack:win": "electron-packager . MikuDesk --platform=win32 --arch=x64 --out=dist --overwrite --asar --ignore=^/dist --ignore=^/test --ignore=^/.inspection --ignore=^/node_modules/.cache",
+    "check:assets": "node scripts/check-assets.mjs",
+    "prestart": "npm run check:assets",
+    "prepack:win": "npm run check:assets"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "ajv": "8.17.1",
+    "cross-spawn": "7.0.6"
+  },
+  "devDependencies": {
+    "electron": "45.3.1",
+    "@electron/packager": "^19.0.1"
+  },
+  "license": "MIT"
+}
